@@ -19,7 +19,6 @@ const connectToDatabase = require("./config/connection.js");
 const dotenv = require("dotenv");
 const { decryptionMiddleware } = require("./middlewares/encryptAndDecrypt.js");
 
-
 const loggerMiddleware = require("./middlewares/loggerMiddleware.js");
 const {
   errorHandlerMiddleware,
@@ -29,7 +28,9 @@ const { loadExampleData } = require("./config/oAuthModelConf.js");
 dotenv.config();
 
 const specs = swaggerJsdoc(swaggerOptions);
-app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(specs));
+app.use("/api/documentation", swaggerUi.serve, swaggerUi.setup(specs));
+
+//? Handle cors
 app.use(cors({ origin: "*" }));
 
 //? Additionals
