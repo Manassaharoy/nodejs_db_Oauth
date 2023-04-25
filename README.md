@@ -1,7 +1,7 @@
 
-# Node js with mongoose and oAuth. 
+# Node js playground. 
 
-
+This is to test and playaround with all featues and functionalities. Read the instructions before starting and changelogs to see changes
 
 # Features 
 
@@ -10,7 +10,6 @@
 - response middleware to make the response sending structure same for all api point.
 - oAuth 2.0 available
 - error handling middleware with enum HTTP error codes
-- monitor app by visiting url: /status
 - monitor app by visiting url: /status
 - a colorful console log function
 

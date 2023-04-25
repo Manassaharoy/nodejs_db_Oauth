@@ -18,19 +18,24 @@ const connectToDatabase = require("./config/connection.js");
 //? Environment veriable initialization
 const dotenv = require("dotenv");
 const { decryptionMiddleware } = require("./middlewares/encryptAndDecrypt.js");
+// const {
+//   decryptionMiddleware,
+//   encryptionMiddleware,
+// } = require("./middlewares/encryptAndDecryptSHA256.js");
 
 const loggerMiddleware = require("./middlewares/loggerMiddleware.js");
 const {
   errorHandlerMiddleware,
 } = require("./middlewares/errorHandlerMiddleware.js");
 const { loadExampleData } = require("./config/oAuthModelConf.js");
+const { coloredLog } = require("./utils/coloredLog.js");
+const responseSend = require("./utils/responseSend.js");
+const { ErrorHandler } = require("./utils/errorHandler.js");
 
 dotenv.config();
 
 const specs = swaggerJsdoc(swaggerOptions);
-app.use("/api/documentation", swaggerUi.serve, swaggerUi.setup(specs));
-
-//? Handle cors
+app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(specs));
 app.use(cors({ origin: "*" }));
 
 //? Additionals
@@ -47,7 +52,8 @@ app.use(bodyParser.json({ limit: "50mb" }));
 // TODO: uncomment connectToDatabase for mongodb and connectPrisma for prisma
 connectToDatabase(process.env.MONGO_DATABASE_URL);
 
-loadExampleData(); //? This one for oAuth
+
+loadExampleData();
 
 //? set the view engine to ejs
 app.set("view engine", "ejs");
@@ -70,5 +76,13 @@ app.use(errorHandlerMiddleware);
 
 //? Starting server
 app.listen(process.env.PORT || 5000, () => {
-  console.log(`Server is running on port ${process.env.PORT || 5000}`);
+  coloredLog(
+    [
+      "Server is running on port",
+      `${process.env.PORT || 5000}`,
+      `& single process id: `,
+      `${process.pid}`,
+    ],
+    6
+  );
 });

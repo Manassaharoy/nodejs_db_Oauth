@@ -1,16 +1,16 @@
 {
-  "name": "nodejs_db_oauth",
-  "version": "1.0.0",
-  "description": "A nodejs, mongodb and oAuth ready template",
+  "name": "nodejsplayground",
+  "version": "1.1.0",
+  "description": "A nodejs playground",
   "main": "index.js",
   "type": "commonjs",
   "scripts": {
-    "test": "nodemon index.js",
+    "index": "nodemon index.js",
     "start": "node index.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Manassaharoy/nodejs_db_Oauth"
+    "url": "https://github.com/Manassaharoy/nodeplayground"
   },
   "keywords": [
     "node",
@@ -19,13 +19,9 @@
     "error handling",
     "middleware",
     "ODM",
-    "Mongoose",
-    "oAuth",
-    "logs",
-    "swagger_docs",
-    "monitor"
+    "Mongoose"
   ],
-  "homepage": "https://github.com/Manassaharoy/nodejs_db_Oauth#readme",
+  "homepage": "https://github.com/Manassaharoy/nodeplayground#readme",
   "engines": {
     "node": ">=12.0.0",
     "npm": ">=6.0.0"
@@ -37,6 +33,8 @@
   },
   "license": "ISC",
   "dependencies": {
+    "@prisma/client": "^4.12.0",
+    "@socket.io/admin-ui": "^0.5.1",
     "@types/node": "^18.15.11",
     "bcrypt": "^5.1.0",
     "body-parser": "^1.20.2",
@@ -51,6 +49,8 @@
     "nodemailer": "^6.9.1",
     "nodemon": "^2.0.21",
     "oauth2-server": "^3.1.1",
+    "prisma": "^4.12.0",
+    "socket.io": "^4.6.1",
     "swagger-jsdoc": "^6.2.8",
     "swagger-ui-express": "^4.6.2",
     "ts-node": "^10.9.1",
