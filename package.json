@@ -1,7 +1,7 @@
 {
-  "name": "nodejsplayground",
+  "name": "nodejs_db_oauth",
   "version": "1.1.0",
-  "description": "A nodejs playground",
+  "description": "A nodejs application with mongodb and oauth integration",
   "main": "index.js",
   "type": "commonjs",
   "scripts": {
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Manassaharoy/nodeplayground"
+    "url": "https://github.com/Manassaharoy/nodejs_db_Oauth"
   },
   "keywords": [
     "node",
@@ -21,7 +21,7 @@
     "ODM",
     "Mongoose"
   ],
-  "homepage": "https://github.com/Manassaharoy/nodeplayground#readme",
+  "homepage": "https://github.com/Manassaharoy/nodejs_db_Oauth#readme",
   "engines": {
     "node": ">=12.0.0",
     "npm": ">=6.0.0"

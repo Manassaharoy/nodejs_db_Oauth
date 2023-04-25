@@ -1,7 +1,7 @@
 
-# Node js playground. 
+# Node js with mongoose and oAuth. 
 
-This is to test and playaround with all featues and functionalities. Read the instructions before starting and changelogs to see changes
+This is a reatu to go template for nodejs with mongodb and oAuth. Read the instructions before starting and changelogs to see changes
 
 # Features 
 
