@@ -268,9 +268,7 @@
 									"\r",
 									"// Get the data to encrypt\r",
 									"\r",
-									"data = {\r",
-									"    \"accessToken\":\"b7ecb47fd7ec10cccf27a24f73fb5446576e3e21\"\r",
-									"}\r",
+									"data = {}\r",
 									"\r",
 									"var requestBody = JSON.stringify(data);\r",
 									"\r",
@@ -340,7 +338,14 @@
 					},
 					"request": {
 						"auth": {
-							"type": "noauth"
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "ccf92df05af596c19c11c96a8dbe4f3465768fce",
+									"type": "string"
+								}
+							]
 						},
 						"method": "GET",
 						"header": [],
@@ -628,9 +633,7 @@
 									"\r",
 									"// Get the data to encrypt\r",
 									"\r",
-									"data = {\r",
-									"    \"accessToken\":\"bc7ef6985699e78b89bbeca45fae5debb3b0b187\"\r",
-									"}\r",
+									"data = {}\r",
 									"\r",
 									"var requestBody = JSON.stringify(data);\r",
 									"\r",
@@ -700,7 +703,14 @@
 					},
 					"request": {
 						"auth": {
-							"type": "noauth"
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "ccf92df05af596c19c11c96a8dbe4f3465768fce",
+									"type": "string"
+								}
+							]
 						},
 						"method": "GET",
 						"header": [],
@@ -748,8 +758,7 @@
 									"// Get the data to encrypt\r",
 									"\r",
 									"data = {\r",
-									"    \"id\":\"6448116366cbe796873146b4\",\r",
-									"    \"accessToken\":\"bc7ef6985699e78b89bbeca45fae5debb3b0b187\"\r",
+									"    \"id\":\"6448116366cbe796873146b4\"\r",
 									"}\r",
 									"\r",
 									"\r",
@@ -821,7 +830,14 @@
 					},
 					"request": {
 						"auth": {
-							"type": "noauth"
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "ccf92df05af596c19c11c96a8dbe4f3465768fce",
+									"type": "string"
+								}
+							]
 						},
 						"method": "GET",
 						"header": [],
@@ -980,24 +996,19 @@
 							}
 						}
 					],
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
 					"request": {
 						"auth": {
-							"type": "noauth"
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "ab1a1c5fd3e897c8e5bd0080acfcd8d2e0060586",
+									"type": "string"
+								}
+							]
 						},
 						"method": "GET",
 						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"accessToken\":\"f3ce8e661e5085a5d2379e9bb29e21fad37a737d\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
 						"url": {
 							"raw": "http://localhost:5000/auth/authcheck",
 							"protocol": "http",
@@ -1043,7 +1054,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"phoneNumber\":\"01515212628\",\r\n    \"password\":\"111111\",\r\n    \"accessToken\":\"f3ce8e661e5085a5d2379e9bb29e21fad37a737d\"\r\n}",
+							"raw": "{\r\n    \"phoneNumber\":\"01515212628\",\r\n    \"password\":\"111111\",\r\n    \"accessToken\":\"1b63f1222d296b9168afb69752ca16202a629ed6\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1095,7 +1106,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"authorization\":\"application:secret\",\r\n    \"grant_type\":\"refresh_token\",\r\n    \"phoneNumber\":\"01515212628\",\r\n    \"password\":\"111111\",\r\n    \"refreshToken\":\"e87d5a7ed4ff4a9bc74f1563c7b5aafd6b8cde45\"\r\n}",
+							"raw": "{\r\n    \"authorization\":\"application:secret\",\r\n    \"grant_type\":\"refresh_token\",\r\n    \"phoneNumber\":\"01515212628\",\r\n    \"password\":\"111111\",\r\n    \"refreshToken\":\"e5d5a2c22271579f3d23683e4934f3973f9243d0\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1139,24 +1150,19 @@
 							}
 						}
 					],
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
 					"request": {
 						"auth": {
-							"type": "noauth"
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "ab1a1c5fd3e897c8e5bd0080acfcd8d2e0060586",
+									"type": "string"
+								}
+							]
 						},
 						"method": "GET",
 						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"accessToken\":\"bc7ef6985699e78b89bbeca45fae5debb3b0b187\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
 						"url": {
 							"raw": "http://localhost:5000/users",
 							"protocol": "http",
@@ -1198,13 +1204,20 @@
 					},
 					"request": {
 						"auth": {
-							"type": "noauth"
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "ab1a1c5fd3e897c8e5bd0080acfcd8d2e0060586",
+									"type": "string"
+								}
+							]
 						},
 						"method": "GET",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\":\"6448116366cbe796873146b4\",\n    \"accessToken\":\"bc7ef6985699e78b89bbeca45fae5debb3b0b187\"\n}",
+							"raw": "{\n    \"id\":\"6450a76339317379d943a0a8\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"

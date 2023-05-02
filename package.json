@@ -1,6 +1,6 @@
 {
   "name": "nodejs_db_oauth",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "A nodejs application with mongodb and oauth integration",
   "main": "index.js",
   "type": "commonjs",
